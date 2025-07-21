@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodAraiD</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1>🍽️ FoodAraiD 🥤</h1>
+    <h2>วันนี้กินอะไรดี + ดื่มอะไรดีนะ?</h2>
+
+    <div class="container">
+        <!-- อาหาร -->
+        <div class="box">
+            <h3>อาหาร</h3>
+            <button onclick="randomFood()">สุ่มอาหาร</button>
+            <div class="result" id="food-result">
+                <h2 id="food-name"></h2>
+                <img id="food-img" src="https://cdn-icons-png.freepik.com/512/2771/2771401.png" alt="" />
+                <p id="food-category"></p>
+            </div>
+        </div>
+
+        <!-- เครื่องดื่ม -->
+        <div class="box">
+            <h3>เครื่องดื่ม</h3>
+            <button onclick="randomDrink()">สุ่มเครื่องดื่ม</button>
+            <div class="result" id="drink-result">
+                <h2 id="drink-name"></h2>
+                <img id="drink-img" src="https://cdn-icons-png.freepik.com/512/2771/2771401.png" alt="" />
+                <p id="drink-category"></p>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
